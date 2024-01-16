@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let array = ["3", "6", "2", "5", "1", "2", "3"];
+      var n = prompt("Nhập vào số nguyên bất kỳ");
+      let count = 0;
+      for (let i = 0; i < array.length; i++) {
+        if (array[i] == n) {
+          count++;
+        } else {
+          //   break;
+        }
+      }
+      console.log(
+        "Phần tử có giá trị",
+        n,
+        " xuất hiện",
+        count,
+        "lần trong mảng"
+      );
+    </script>
+  </body>
+</html>

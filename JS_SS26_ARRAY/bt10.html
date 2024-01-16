@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bt10</title>
+  </head>
+  <body>
+    <script>
+      var array1 = [1, 2, 3, 4, 5];
+      var array2 = [-3, -1, 0, 1, 5];
+      var array3 = [1, 5, 6, 7];
+      var array = [];
+      var a = 0;
+      for (let i = 0; i <= array1.length; i++) {
+        for (let j = 0; j <= array2.length; j++) {
+          for (let k = 0; k <= array3.length; k++) {
+            if (array1[i] === array2[j] && array2[j] === array3[k]) {
+              array.unshift(array1[i]);
+            }
+          }
+        }
+      }
+      while (a < array.length) {
+        console.log(array[a]);
+        a++;
+      }
+    </script>
+  </body>
+</html>
